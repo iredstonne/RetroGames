@@ -1,11 +1,10 @@
 package io.github.engine;
 
+import io.github.engine.renderer.RenderSystem;
 import org.lwjgl.opengl.GL;
 
 import static org.lwjgl.glfw.GLFW.*;
-import static org.lwjgl.opengl.GL11.GL_COLOR_BUFFER_BIT;
-import static org.lwjgl.opengl.GL11.glClear;
-import static org.lwjgl.opengl.GL11C.glClearColor;
+import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.system.MemoryUtil.NULL;
 
 public class MainWindow {
@@ -44,8 +43,8 @@ public class MainWindow {
 
     private void loop() {
         while (!glfwWindowShouldClose(this.handle)) {
-            glClearColor((255), (255), (255), (255));
-            glClear(GL_COLOR_BUFFER_BIT);
+            RenderSystem.clearColor(1, 1, 1, 1);
+            RenderSystem.clear(GL_COLOR_BUFFER_BIT);
 
             glfwSwapBuffers(this.handle);
             glfwPollEvents();
