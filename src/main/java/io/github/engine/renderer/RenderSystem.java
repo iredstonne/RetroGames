@@ -4,6 +4,7 @@ import java.nio.ByteBuffer;
 
 import static org.lwjgl.opengl.GL11.*;
 
+@Deprecated(forRemoval = true)
 public final class RenderSystem {
 
     public static void clear(int mask) {
