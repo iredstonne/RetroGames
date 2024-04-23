@@ -19,6 +19,13 @@ By default, we provide some games for you to play, including...
 - Card games
 - Puzzle
 
+## Roadmap
+
+[] Building up OpenGL engine
+[] Create built-in games
+[] Make the Retro API
+[] Add multiplayer servers
+
 ### Authors
 
 - [@iredstonne](https://www.github.com/iredstonne)
