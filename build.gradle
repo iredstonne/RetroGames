@@ -32,9 +32,12 @@ dependencies {
     runtimeOnly "org.lwjgl:lwjgl-opengl::$lwjglNatives"
     runtimeOnly "org.lwjgl:lwjgl-stb::$lwjglNatives"
     implementation "org.joml:joml:$jomlVersion"
+    compileOnly "org.projectlombok:lombok:1.18.32"
+    annotationProcessor "org.projectlombok:lombok:1.18.32"
     testImplementation "org.junit.jupiter:junit-jupiter-api:5.8.1"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:5.8.1"
 }
+
 test {
     useJUnitPlatform()
 }
