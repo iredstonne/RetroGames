@@ -1,6 +1,7 @@
 package io.github.engine;
 
 import io.github.engine.renderer.RenderSystem;
+import io.github.engine.shader.ShaderProgram;
 import org.lwjgl.opengl.GL;
 
 import static org.lwjgl.glfw.GLFW.*;
@@ -43,8 +44,27 @@ public class MainWindow {
 
     private void loop() {
         while (!glfwWindowShouldClose(this.handle)) {
-            RenderSystem.clearColor(1, 1, 1, 1);
-            RenderSystem.clear(GL_COLOR_BUFFER_BIT);
+            glClearColor(1, 1, 1, 1);
+            glClear(GL_COLOR_BUFFER_BIT);
+
+            final ShaderProgram program = new ShaderProgram(
+                    "main",
+                    "void main() {}", // vertex shader source
+                    "void main() {}" // fragment shader source
+            );
+            program.link();
+            program.bind();
+            program.unbind();
+            program.dispose();
+
+            // final ShaderProgram program = new ShaderProgram(
+            //        "main",
+            //        new ResourceLocation("shaders/main")
+            // );
+            // program.link();
+            // program.bind();
+            // program.unbind();
+            // program.dispose();
 
             glfwSwapBuffers(this.handle);
             glfwPollEvents();
