@@ -21,10 +21,10 @@ By default, we provide some games for you to play, including...
 
 ## Roadmap
 
-- [] Building up OpenGL engine
-- [] Create built-in games
-- [] Make the Retro API
-- [] Add multiplayer servers
+- [ ] Building up OpenGL engine
+- [ ] Create built-in games
+- [ ] Make the Retro API
+- [ ] Add multiplayer servers
 
 ### Authors
 
