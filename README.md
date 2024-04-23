@@ -1,7 +1,8 @@
 # RetroGames
+[![CC BY-NC-SA v4 License](https://img.shields.io/badge/License-CC%20BY%20NC%20SA%20v4-yellow.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-RetroGames is a **framework** on which developers can create their own **games** with retro feeling in mind
-We use our own OpenGL engine to make all of this possible fast and efficient
+RetroGames is a **framework** on which developers can create their own **games** with retro feeling in mind.
+We use our own OpenGL engine to make all of this possible fast and efficient.                                                         
 This framework is built in Java using LWJGL
 
 ### Built-in games
